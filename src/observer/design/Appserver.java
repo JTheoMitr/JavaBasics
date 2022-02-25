@@ -15,7 +15,7 @@ public class Appserver {
 		postoffice.subscribe(chris);
 		postoffice.subscribe(john);
 		
-		UpdatedVideo passport = new UpdatedVideo("John", "johns address", "You've got a new Firecloud update");
+		UpdatedVideo passport = new UpdatedVideo("John", "johns phone", "You've got a new Firecloud update");
 		postoffice.ppOfficeSendsaPPPostOffice(passport);
 
 
