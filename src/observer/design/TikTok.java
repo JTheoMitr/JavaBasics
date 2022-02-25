@@ -15,14 +15,14 @@ String name;
 	public void update(Object obj) {
 		if (obj instanceof Firecloud)
 		{
-			Firecloud po = (Firecloud) obj;
-			checkArrivalTheirPassport(po.getAllRecivedPPatPO());
+			Firecloud fcm = (Firecloud) obj;
+			checkForNewVideos(fcm.getAllVideos());
 		}
 	}
 	
 	//polling the server for updates
 	//abdul goes to passport office and sift through the bunch of passports
-	public void checkArrivalTheirPassport(ArrayList<UpdatedVideo> setOfPassport) {
+	public void checkForNewVideos(ArrayList<UpdatedVideo> setOfPassport) {
 		if(setOfPassport!= null) { //if there are passports in the po
 			for ( int i =0; i < setOfPassport.size(); i++)
 
@@ -32,7 +32,7 @@ String name;
 			}
 			}
 			else {
-				System.out.println(name+" your passport hasn't arrived yet");
+				System.out.println(name+" you have no new videos to view");
 			}
 		}
 

@@ -19,7 +19,7 @@ public class Firecloud implements Subject {
 		Notify();
 	}
 	
-	public ArrayList<UpdatedVideo> getAllRecivedPPatPO()
+	public ArrayList<UpdatedVideo> getAllVideos()
 	{
 		return allReceviedPassport;
 	}
